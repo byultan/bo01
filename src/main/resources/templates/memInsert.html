@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form th:action="@{/memInsert}" method="post">
+        <label for="name">
+            username: <input type="text" id="name" name="name">
+        </label>
+        <label for="email">
+            email: <input type="email" id="email" name="email">
+        </label>
+        <label for="age">
+            age: <input type="number" id="age" name="age">
+        </label>
+        <button type="submit">전송</button>
+    </form>
+</body>
+</html>
